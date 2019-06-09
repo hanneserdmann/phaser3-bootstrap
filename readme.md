@@ -4,7 +4,7 @@ Phaser 3 bootstrap project using:
 * Typescript
 * Webpack & Webpack Dev Server
 
-
+Example game scene taken from [Getting Started with Phaser 3](https://phaser.io/tutorials/getting-started-phaser3).
 
 ## Setup
 You will need an installation of [NodeJS](https://nodejs.org/en/) including NPM. Also install Yarn as an NPM package 
