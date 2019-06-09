@@ -7,11 +7,23 @@ module.exports = {
     mode: 'development',
     entry: './src/app.ts',
     module: {
-        rules: [{
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node_modules/
-        }]
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/images'
+                    }
+                },
+                exclude: /node_modules/
+            }
+        ]
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js']

@@ -24,6 +24,9 @@ function preload (){
     this.load.image('sky', 'assets/skies/space3.png');
     this.load.image('logo', 'assets/sprites/phaser3-logo.png');
     this.load.image('red', 'assets/particles/red.png');
+
+    // example for using local assets with webpack and file-loader
+    // this.load.image('sky', require('./assets/sky.png'));
 }
 
 function create (){
